@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login y Registros</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+
+
+<div class="container">
+	<h2> Login & Register</h2>
+
+<div id="loginForm">
+	<h3>Login</h3>
+	<form onsubmit="return loginUser()">
+		<div class="input-container">
+			<input type="text" id="loginUsername" placeholder="Username" >
+		</div>
+		
+		<div class="input-container">
+			<input type="password" id="loginPassword" placeholder="Password">
+			
+		</div>
+		<button type="submit">Login</button>
+	</form>
+
+<p>No tienes una cuenta pa'? <a href="#" onclick="toggleForm()">Registate aquí</a></p>
+</div>	
+
+<div id="registerForm" style="display: none;"><h3>Register</h3>
+<form onsubmit=" return registerUser()">
+		<div class="input-container">
+			<input type="text" id="registerUsername" placeholder="Username">
+		</div>
+		<div class="input-container">
+			<input type="password" id="registerPassword" placeholder="Username">
+		</div>
+		<button type="submit">Register</button>
+		
+
+
+</form>
+
+<p>Ya tienes una cuenta? <a href="#" onclick="toggleForm()">Login here</a></p>
+</div>
+
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
